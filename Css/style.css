@@ -1,0 +1,1947 @@
+/*PROPIEDAD DE MARGENES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 205px;
+    z-index: 1000;
+    transition: transform 0.4s ease;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+.contenedor-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.titulo-empresa-inicio {
+    position: absolute;
+    background-image: url(../imagenes/imgdefondo5.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 goldenrod;
+
+}
+
+.titulo-empresa-inicio h1 {
+    padding: 2px;
+    margin-top: -30px;
+    align-items: center;
+
+}
+
+.titulo-empresa-inicio a img:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    align-items: center;
+}
+
+.nombre-empresa {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 140px;
+    font-family: fuenteyellow;
+    font-weight: 600;
+    text-shadow: -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        2px 2px 0 white;
+    padding-top: px;
+    width: 100%;
+    height: 100%;
+    align-items: first baseline;
+
+}
+
+.productos-empresa {
+    color: rgb(28, 8, 37);
+    text-align: center;
+    font-size: 35px;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    padding: 0 0 5px 0;
+    text-shadow: -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        2px 2px 0 white;
+    margin-top: -5px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Header principal */
+@media (max-width: 500px) {
+
+    header {
+        height: 150px;
+
+    }
+
+    .contenedor-header {
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .titulo-empresa-inicio {
+
+        box-shadow: 0 0 5px 0 goldenrod;
+    }
+
+    .nombre-empresa {
+        font-size: 55px;
+        line-height: 1.5;
+        padding-top: 0;
+    }
+
+    .productos-empresa {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .titulo-empresa-inicio h1 {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .titulo-empresa-inicio img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+}
+
+
+
+/* ESTILO DE LA BARRA PRINCIPAL */
+.barra-principal {
+    display: flex;
+    padding: 1px;
+    width: 100%;
+    height: 9vh;
+    position: relative;
+    top: 12.7em;
+
+}
+
+
+
+.imagen-logo {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+
+
+.inicio-barras a img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA PRINCIPAL */
+.barra-principal {
+    width: 100%;
+    min-height: 9vh;
+    position: relative;
+    top: 12.7em;
+    box-shadow: 0 0 8px 0 goldenrod;
+    
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+}
+
+
+.navbar-nav .nav-link {
+    font-family: fuenteracing;
+    font-weight: bold;
+    color: rgb(76, 67, 169);
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(135, 197, 251);
+}
+
+
+.dropdown-menu {
+    background-color: black !important;
+    box-shadow: 0 0 8px 0 goldenrod;
+}
+
+.dropdown-item {
+    color: darkslateblue;
+}
+
+.dropdown-item:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.navbar-toggler {
+    margin-left: 0;
+}
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+/* Responsive mobile 500px */
+@media (max-width: 500px) {
+
+ 
+  .barra-principal {
+    top: 0; 
+    min-height: auto;
+    padding: 5px;
+    top: 105px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    
+  }
+
+  .navbar-brand img {
+    height: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 12px 10px;
+    background-color: #000;
+    
+
+  }
+
+ 
+  .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 13px 15px;
+    background-color: #000;
+    margin-top: 20px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    
+   
+  }
+
+  .d-flex {
+    flex-direction: column;
+    gap: 2px;
+    background-color: black;
+    box-shadow: 0 0 8px 0 goldenrod;
+    margin-top: 0;
+
+  }
+  .d-flex input {
+    width: 100%;
+    margin: 0px;
+  }
+  .d-flex button {
+    width: 100%;
+  }
+
+ 
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 5px 10px;
+  }
+
+    .dropdown-menu {
+    background-color: black !important;
+  }
+
+  .dropdown-item {
+    background-color: black !important;
+    color: darkslateblue;
+  }
+
+  .dropdown-item:hover {
+    background-color: cornflowerblue;
+    color: white;
+  }
+}
+
+
+
+
+/* buscador barra principal */
+.contenedor-buscador-principal {
+    display: flex;
+    background-color: black;
+    justify-content: right;
+    width: 20%;
+    bottom: 36px;
+    position: relative;
+    align-items: flex-end;
+    left: 1180px
+}
+
+/* Responsive Mobile 500 px */
+
+
+/* redes en header */
+.enlaces-redes-logo {
+    align-items: flex-start;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    justify-content: space-evenly;
+    gap: 10px 20px;
+
+}
+
+.enlaces-redes-logo a {
+    width: 40px;
+    height: 40px;
+    bottom: 100%;
+    gap: 10px;
+}
+
+.enlaces-redes-logo a img {
+    width: 60px;
+    height: 60px;
+    bottom: 100%;
+    gap: 10px;
+
+}
+/* Responsive mobile 500px */
+@media (max-width: 500px) {
+
+    .enlaces-redes-logo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0;
+        gap: 2px;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .enlaces-redes-logo a {
+        width: auto;
+        height: auto;
+    }
+
+    .enlaces-redes-logo a img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+/* perfil y carrito de compras */
+.contenedor-ingreso-compras {
+    position: absolute;
+    right: 5%;
+    bottom: 3px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.contenedor-ingreso-compras p {
+    font-weight: bold;
+    text-shadow: -2px -2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        2px 2px 0 black;
+    gap: 0;
+    font-size: 18px;
+}
+
+.contenedor-ingreso-compras h3 {
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: -2px -2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        2px 2px 0 black;
+    gap: 0;
+    font-size: 18px;
+}
+
+.caja-compras {
+    bottom: 10px;
+    text-align: center;
+    padding: 0;
+
+}
+
+.caja-compras a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    gap: 0;
+
+}
+
+.caja-compras a {
+    font-size: 16px;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: -2px -2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        2px 2px 0 black;
+    text-decoration: underline;
+
+}
+    /* Responsive mobile 500px */
+@media (max-width: 500px) {
+
+
+    .contenedor-ingreso-compras {
+        right: 0;
+        bottom: 0;
+        margin: 1px;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .contenedor-ingreso-compras p{
+        font-size: 12px;
+        line-height: 1;
+    }
+    .contenedor-ingreso-compras h3{
+        text-decoration: underline;
+        font-size: 10px;
+        width: 10%;
+    }
+
+    .caja-compras {
+        bottom: 0;
+        padding: 0;
+    }
+
+    .caja-compras a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .caja-compras a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* TIPOS DE FUENTES */
+
+@font-face {
+    font-family: fuenteyellow;
+    src: url(../tipos-de-letras/Yellowtail/Yellowtail-Regular.ttf)
+}
+
+@font-face {
+    font-family: fuentedarkcollege;
+    src: url(../tipos-de-letras/dark_college/Dark\ College.otf);
+}
+
+@font-face {
+    font-family: fuentecodiment;
+    src: url(../tipos-de-letras/Condiment/Condiment/Condiment-Regular.ttf);
+}
+
+@font-face {
+    font-family: fuenteracing;
+    src: url(../tipos-de-letras/Racing_Sans_One/RacingSansOne-Regular.ttf);
+}
+
+/*ESTILOS PRINCIPALES INDEX */
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+/* Index Guitarras */
+.main-guitarras {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/imgdefondo4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 37vh 10px 0 10px;
+    width: 100%;
+    text-align: center;
+
+}
+@media (max-width:500px) {
+    .main-guitarras {
+     padding: 10vh 10px 0 10px;
+
+}
+}
+
+.main-guitarras h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 7px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    object-fit: cover;
+
+
+
+}
+
+.caja-producto {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0.5px 2px 6px goldenrod;
+    flex-grow: 1;
+    color: rgb(76, 67, 169);
+    object-fit: cover;
+    width: 98%;
+    padding: 5px;
+    gap: 2px;
+    margin: 10px;
+    align-items: center;
+    height: auto;
+    justify-content: space-evenly;
+
+}
+
+.caja-producto img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    position: static;
+    object-fit: contain;
+
+}
+
+.caja-producto a {
+    margin: 5px;
+    color: rgb(1, 1, 1);
+    background-color: goldenrod;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    text-align: center;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+
+}
+
+.caja-producto a:hover {
+    background-color: rgb(87, 192, 241);
+    color: rgb(0, 0, 0);
+}
+
+.caja-producto h4 {
+
+    color: rgb(45, 45, 114);
+    font-size: 40px;
+    align-items: center;
+    position: static;
+    text-shadow: -1px -1px 0 goldenrod,
+        -1px 1px 0 goldenrod,
+        1px -1px 0 goldenrod,
+        1px 1px 0 goldenrod;
+    width: auto;
+
+}
+
+.caja-producto p {
+
+    color: white;
+    border: 1px solid goldenrod;
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 15px;
+    background-color: green;
+    box-shadow: 0 0 8px 0 goldenrod;
+    font-size: 18px;
+    object-fit: contain;
+
+}
+
+.caja-producto button {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-right: 100px;
+
+}
+
+.caja-producto button a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    border: 1px solid green;
+    padding: 1px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+}
+
+
+.caja-producto h5 {
+    color: rgb(153, 116, 24);
+    font-size: 15px;
+    align-items: center;
+    position: static;
+
+}
+
+
+.hr-linea {
+
+    background-color: rgb(85, 9, 77);
+    border: 2px goldenrod;
+    border-style: outset;
+    padding: 1px;
+    box-shadow: 0 0 10px 0 goldenrod;
+
+}
+    /* Responsive mobile 500px */
+    @media (max-width: 500px) {
+
+
+    .main-guitarras {
+        padding: 120px 10px 20px;
+        background-attachment: scroll;
+    }
+
+    .main-guitarras h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+
+    .contenedor-productos {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+    }
+
+
+    .caja-producto {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .caja-producto img {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+    }
+
+
+    .caja-producto h4 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+
+    .caja-producto h5 {
+        font-size: 14px;
+    }
+
+
+    .caja-producto p {
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+
+    .caja-producto a {
+        font-size: 14px;
+        padding: 8px 14px;
+        margin: 8px 0;
+    }
+
+    .caja-producto button {
+        width: auto;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .caja-producto button a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+
+
+/* Index Bajos */
+
+.main-bajo {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondobajo3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.main-amplificador {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondoamplificador.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.titulos-productos {
+    font-family: fuenteracing;
+    text-decoration: none;
+    color: rgb(136, 106, 68);
+    font-size: 1.35em;
+    padding: 20px;
+    align-items: center center;
+    justify-content: center;
+
+}
+
+.titulos-promo {
+    font-family: fuenteracing;
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(136, 106, 68);
+    padding-top: 20px;
+    display: inline-block;
+
+
+}
+
+.subtitulos-promo {
+    font-family: fantasy;
+    font-size: 25px;
+    text-decoration: underline;
+    color: rgb(50, 126, 147);
+    padding: 10px;
+    text-shadow: -2px -2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        2px 2px 0 black;
+}
+
+/* Estilos footer */
+
+footer {
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    background-image: url(../imagenes/fondo\ redes.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    align-items: center;
+
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+
+}
+
+.caja-redes {
+    padding: 5px;
+    align-items: center;
+    position: static;
+    width: 100%;
+    height: 25vh;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.caja-redes h3 {
+
+    align-items: center;
+    position: static;
+    text-align: center;
+
+}
+
+.caja-redes img {
+    width: 60px;
+    padding: 5px;
+    margin: 12px;
+    align-items: center;
+
+}
+
+.caja-redes ul {
+    list-style: none;
+    padding: 10px;
+
+
+}
+
+.caja-redes li {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: goldenrod;
+    align-items: center;
+}
+
+.caja-redes a {
+    text-decoration: underline;
+    color: goldenrod;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.caja-redes a img:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    align-items: center;
+}
+
+.titulos-redes {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    color: goldenrod;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.caja-redes-logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    color: goldenrod;
+    padding-left: 25px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.caja-redes-logo img {
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+
+}
+
+.caja-redes-logo li {
+
+    text-decoration: none;
+
+}
+
+/* Responsive footer mobile 500px */
+@media (max-width: 500px) {
+
+    .contenedor-footer {
+        gap: 0;
+        margin: 0;
+        height: 200px;
+        width: 100%;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .caja-redes {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .caja-redes img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+    }
+       .caja-redes p {
+        font-size: 10px;
+    }
+
+       .caja-redes ul li{
+        font-size: 14px;
+    }
+
+    .caja-redes-logo {
+        width: 120px;
+        font-size: 12px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: static;
+
+
+    }
+    .caja-redes-logo img {
+        width: 40px;
+        height: 40px;
+
+
+    }
+
+    .titulos-redes,
+    .caja-redes h3 {
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos Guitarras Eléctricas */
+
+.titulo-empresa-guitarras {
+    position: absolute;
+    background-image: url(../imagenes/imgdefondo7.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 goldenrod;
+
+}
+
+.titulo-empresa-guitarras h1 {
+    align-items: center;
+
+}
+
+.titulo-empresa-guitarras a img:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    align-items: center;
+}
+
+.nombre-productos-guitarras {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 130px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        2px 2px 0 white;
+    padding-top: 5vh;
+    width: 100%;
+    height: 100%;
+
+}
+
+.guitarras-fondo {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondoneon.avif);
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 255px;
+    width: 100%;
+    text-align: center;
+
+
+
+}
+
+.contenedor-guitarras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 15px;
+    justify-content: center;
+    margin: 10px;
+    width: 60%;
+
+
+}
+
+.caja-producto-guitarra {
+    background-color: transparent;
+    width: 98%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0.5px 2px 6px goldenrod;
+    flex-grow: 1;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+
+}
+
+.caja-producto-guitarra img {
+    margin-top: 5px;
+    border-radius: 10px;
+    height: 5%;
+    width: 70%;
+    align-items: center;
+    position: static;
+
+}
+
+.caja-producto-guitarra a {
+
+    margin: 5px;
+    color: rgb(1, 1, 1);
+    background-color: goldenrod;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    text-align: center;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    justify-content: center;
+    width: auto;
+    align-items: end;
+
+
+}
+
+.caja-producto-guitarra a:hover {
+    background-color: rgb(87, 192, 241);
+    color: rgb(0, 0, 0);
+}
+
+
+.caja-producto-guitarra h4 {
+    color: rgb(45, 45, 114);
+    font-size: 40px;
+    align-items: center;
+    position: static;
+    text-shadow: -1px -1px 0 goldenrod,
+        -1px 1px 0 goldenrod,
+        1px -1px 0 goldenrod,
+        1px 1px 0 goldenrod;
+
+
+}
+
+.caja-producto-guitarra p {
+    color: white;
+    border: 1px solid goldenrod;
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 15px;
+    background-color: green;
+    box-shadow: 0 0 8px 0 goldenrod;
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
+
+.caja-producto-guitarra h5 {
+    color: rgb(153, 116, 24);
+    font-size: 15px;
+    align-items: center;
+    position: static;
+
+
+}
+
+.caja-producto-guitarra button {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 400;
+
+
+}
+
+.caja-producto-guitarra button a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: black;
+    border: 1px solid green;
+    padding: 1px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+
+
+}
+    /* Responsive mobile 500px */
+@media (max-width: 500px) {
+
+    .titulo-empresa-guitarras {
+        text-align: center;
+        font-size: 60px;
+        padding-top: 0px;
+        line-height: 1.5;
+    }
+
+    .nombre-productos-guitarras {
+        font-size: 18px;
+        margin-top: 0;
+        padding: 0;
+        
+        
+    }
+
+    .guitarras-fondo {
+        padding-top: 100px;
+        background-attachment: scroll;
+    }
+
+    .contenedor-guitarras {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+
+    .caja-producto-guitarra {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .caja-producto-guitarra img {
+        width: 90%;
+        height: auto;
+    }
+
+    .caja-producto-guitarra h4 {
+        font-size: 26px;
+    }
+
+    .caja-producto-guitarra h5 {
+        font-size: 12px;
+    }
+
+
+    .caja-producto-guitarra p {
+        width: auto;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .caja-producto-guitarra a {
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .caja-producto-guitarra button {
+        width: auto;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .caja-producto-guitarra button a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+
+/* Estilos de bajos */
+
+.titulo-empresa-bajos {
+    position: absolute;
+    background-image: url(../imagenes/fondobajo3.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 goldenrod;
+
+}
+
+.titulo-empresa-bajos h1 {
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.titulo-empresa-bajos a img:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    align-items: center;
+}
+
+.nombre-productos-bajos {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 130px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        2px 2px 0 white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.bajos-fondo {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondobajo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 255px;
+    width: 100%;
+    text-align: center;
+
+}
+
+    /* Responsive mobile 500px */
+@media (max-width: 500px) {
+
+    .titulo-empresa-bajos {
+        text-align: center;
+    }
+    .titulo-empresa-bajos h1 {
+    font-size: 80px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    }
+    .nombre-productos-guitarras {
+        font-size: 50px;
+        padding-top: 10px;
+        line-height: 1.1;
+        height: auto;
+    }
+
+    .bajos-fondo {
+        padding-top: 100px;
+        background-attachment: scroll;
+    }
+
+}
+
+/* Estilos de Amplificadores */
+.titulo-empresa-amplificadores {
+    position: absolute;
+    background-image: url(../imagenes/fondoampli3.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 goldenrod;
+    padding-bottom: 10px;
+
+}
+
+.titulo-empresa-amplificadores h1 {
+    align-items: center;
+}
+
+.titulo-empresa-amplificadores a img:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    align-items: center;
+}
+
+.nombre-productos-amplificadores {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 130px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        2px 2px 0 white;
+    padding-top: 3.5vh;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ampli-fondo {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondoampli4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 255px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.caja-producto-amplificador {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0.5px 2px 6px goldenrod;
+    flex-grow: 1;
+    color: rgb(76, 67, 169);
+    object-fit: cover;
+    width: 98%;
+    margin: 15px;
+    align-items: center;
+    height: auto;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.caja-producto-amplificador img {
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    object-fit: contain;
+    padding: 0;
+
+}
+
+.caja-producto-amplificador a {
+    margin: 5px;
+    color: rgb(1, 1, 1);
+    background-color: goldenrod;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    text-align: center;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+
+}
+
+.caja-producto-amplificador a:hover {
+    background-color: rgb(87, 192, 241);
+    color: rgb(0, 0, 0);
+}
+
+.caja-producto-amplificador h4 {
+    color: rgb(45, 45, 114);
+    font-size: 40px;
+    align-items: center;
+    position: static;
+    text-shadow: -1px -1px 0 goldenrod,
+        -1px 1px 0 goldenrod,
+        1px -1px 0 goldenrod,
+        1px 1px 0 goldenrod;
+    width: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.caja-producto-amplificador p {
+    color: white;
+    border: 1px solid goldenrod;
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 15px;
+    background-color: green;
+    box-shadow: 0 0 8px 0 goldenrod;
+    font-size: 18px;
+    object-fit: contain;
+
+}
+
+.caja-producto-amplificador h5 {
+    color: rgb(153, 116, 24);
+    font-size: 15px;
+    align-items: center;
+    position: static;
+    padding: 0;
+    margin: 0;
+
+}
+
+    /* Responsive mobile 500px */
+@media (max-width: 500px) {
+
+    .titulo-empresa-amplificadores {
+        text-align: center;
+    }
+    .titulo-empresa-amplificadores h1 {
+    font-size: 50px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    }
+
+
+    .ampli-fondo {
+        padding-top: 100px;
+        background-attachment: scroll;
+    }
+
+}
+
+
+
+/* estilos Contactanos */
+
+.titulo-empresa-contactanos {
+    position: absolute;
+    background-image: url(../imagenes/imgdefondo6.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 goldenrod;
+
+}
+
+.titulo-empresa-contactanos h1 {
+    align-items: center;
+}
+
+.titulo-empresa-contactanos a img:hover {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    align-items: center;
+}
+
+.contactos-fondo {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondobajo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 265px;
+    width: 100%;
+    text-align: center;
+}
+
+.nombre-contactanos {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 130px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        2px 2px 0 white;
+    padding-top: 3.5vh;
+
+}
+
+.imagen-redes {
+    margin: 15px;
+    padding: 10px;
+    image-orientation: inherit;
+}
+
+
+.main-contactanos {
+    background: linear-gradient(rgba(166, 178, 208, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/HD-wallpaper-electric-guitar-guitars.jpg);
+    background-size: auto;
+
+}
+
+.contenedor-contactos-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 280px;
+
+
+}
+
+.contactos-cajas {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+}
+
+
+.contactos-informacion {
+    background: #111;
+    color: goldenrod;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.contactos-informacion h2 {
+    margin-bottom: 20px;
+
+}
+
+
+.contactos-formulario {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(45, 45, 114);
+}
+
+.contactos-formulario h2 {
+    margin-bottom: 20px;
+}
+
+.contactos-formulario form {
+    display: grid;
+    gap: 15px;
+}
+
+.contactos-formulario label {
+    display: grid;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.contactos-formulario input,
+.contactos-formulario select,
+.contactos-formulario textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contactos-formulario button {
+    padding: 12px;
+    background: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactos-formulario button:hover {
+    color: white;
+    background: #007bff;
+}
+
+
+/* Responsive Movile 500px */
+@media (max-width: 500px) {
+
+
+
+    .nombre-contactanos {
+        font-size: 30px;
+        padding-top: 20px;
+        line-height: 1.1;
+       
+    }
+
+    .contactos-fondo {
+        padding-top: 150px;
+        background-attachment: scroll;
+    }
+
+    .main-contactanos {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenedor-contactos-main {
+        padding-top: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contactos-cajas {
+        grid-template-columns: 1fr;
+    }
+
+    .contactos-informacion,
+    .contactos-formulario {
+        padding: 20px;
+    }
+
+
+    .imagen-redes {
+        width: 25px;
+        margin: 8px;
+        padding: 5px;
+    }
+
+    .contactos-formulario button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+
+
+/* Página Redes Sociales */
+
+.contenedor-redessociales {
+    padding: 260px 15px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background: linear-gradient(rgba(166, 178, 208, 0.75), rgba(5, 7, 12, 0.75)),
+        url(../imagenes/fondoredesmain.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.caja-producto-redes {
+    width: 100%;
+    max-width: 750px;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.caja-producto-redes h3 {
+    margin-bottom: 15px;
+    color: #f5c542;
+    text-align: center;
+}
+
+.caja-producto-redes img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+.información-redes {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.link-youtube {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: goldenrod;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.link-youtube:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+
+    .caja-producto-redes {
+        padding: 18px;
+    }
+
+    .información-redes {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/* final final */
+.fila-final {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(42, 138, 170);
+    font-weight: 500;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 10px;
+    justify-content: baseline;
+    text-decoration: none;
+
+}
+@media (max-width: 500px) {
+    .fila-final {
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+}
+
+/* Carrusel de imagenes */
+.carrusel {
+    width: 50%;
+    height: 600px;
+    left: 25%;
+    padding: 5px;
+    background: transparent;
+    box-shadow: 0 0 10px 0 goldenrod;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+
+.caja-carrusel {
+    padding: 0px;
+    margin-bottom: 40px;
+    background: transparent;
+    height: 100%;
+
+}
+
+.carousel-item img {
+
+    object-fit: cover;
+    margin: 0;
+    background: transparent;
+    height: 400px;
+
+}
+
+.carousel-caption {
+
+    padding: 10px;
+    position: absolute;
+    bottom: -120px;
+}
+
+.section-carrusel {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-right: 100px;
+
+}
+
+.section-carrusel a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    border: 1px solid green;
+    padding: 2px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+}
+
+.boton-compra {
+
+    color: rgb(1, 1, 1);
+    background-color: goldenrod;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 goldenrod;
+    text-align: center;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    justify-content: center;
+    width: 20%;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.boton-compra:hover {
+    background-color: rgb(87, 192, 241);
+    color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 500px) {
+    .obj-cover {
+        height: 30vh;
+
+    }
+}
+
+
+/* FORMULARIO REGISTRO */
+
+.formulario-registro-cuerpo {
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../imagenes/imgdefondo8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor-registro {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contenedor-registro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-registro form label {
+    font-weight: bold;
+}
+
+.contenedor-registro form input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contenedor-registro form button {
+    width: 100%;
+    padding: 12px;
+    background: goldenrod;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor-registro form button:hover {
+    background: #007bff;
+    color: white;
+}
+
+

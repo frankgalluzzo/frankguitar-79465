@@ -1,0 +1,15 @@
+Buen día Profesor
+
+Realizó las siguiente aclaraciones sobre el proyecto:
+
+-Estuve investigando en YouTube, sobre todo como realizar la barra de inicio y generar los enlaces.
+-Use Chat GPT para realizar el logo y consulte algún código de enlace externo.
+-El resto fue búsqueda en internet de imágenes y contenido, más varias horas de prueba y error.
+-Todavía tiene mucho para mejorar, pero espero la base del proyecto le agrade.
+-Quedo a disposición para aclaraciones y mejoras a implementar, gracias.
+
+Sin más que agregar.
+Atte
+Franco Maximiliano Galluzzo
+
+ 
